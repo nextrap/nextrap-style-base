@@ -1,13 +1,21 @@
 import { Example, Nextrap } from "../description";
 
 const example: Example = {
-    title: "Tooltip",
-    description: "Tooltip component with different positions",
+    title: "Modal",
+    description: "Modal component",
     lang: "html",
     code: `
-        <nx-tooltip text="Tooltip on top" position="top">Hover over me (top)</nx-tooltip>
-        <nx-tooltip text="Tooltip on bottom" position="bottom">Hover over me (bottom)</nx-tooltip>
-        <nx-tooltip text="Tooltip on left" position="left">Hover over me (left)</nx-tooltip>
-        <nx-tooltip text="Tooltip on right" position="right">Hover over me (right)</nx-tooltip>
+        <nx-modal>
+            <div slot="body">This is the body of the modal.</div>
+            <div slot="footer">
+                <button id="close-modal">Close</button>
+            </div>
+        </nx-modal>
+        <script>
+            document.querySelector('nx-modal').open();
+            document.querySelector('#close-modal').addEventListener('click', () => {
+                document.querySelector('nx-modal').close();
+            });
+        </script>
     `,
 };
