@@ -1,0 +1,48 @@
+:root {
+    --nx-input-padding: 0.375rem 0.75rem;
+    --nx-input-border-radius: 0.25rem;
+    --nx-input-border: 1px solid #ced4da;
+    --nx-input-bg: #fff;
+    --nx-input-color: #495057;
+    --nx-input-focus-border-color: #80bdff;
+    --nx-input-focus-bg: #fff;
+    --nx-input-focus-color: #495057;
+    --nx-input-disabled-bg: #e9ecef;
+    --nx-input-disabled-border-color: #ced4da;
+    --nx-input-disabled-color: #6c757d;
+}
+
+.form-control {
+    padding: var(--nx-input-padding);
+    border-radius: var(--nx-input-border-radius);
+    border: var(--nx-input-border);
+    background-color: var(--nx-input-bg);
+    color: var(--nx-input-color);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+    &:focus {
+        border-color: var(--nx-input-focus-border-color);
+        background-color: var(--nx-input-focus-bg);
+        color: var(--nx-input-focus-color);
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+    &:disabled {
+        background-color: var(--nx-input-disabled-bg);
+        border-color: var(--nx-input-disabled-border-color);
+        color: var(--nx-input-disabled-color);
+    }
+}
+
+.input {
+    // Additional specific styles
+}
+
+.textarea {
+    // Additional specific styles
+}
+
+.select {
+    // Additional specific styles
+}

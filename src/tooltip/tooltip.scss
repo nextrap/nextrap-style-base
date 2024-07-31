@@ -1,0 +1,55 @@
+:root {
+    --nx-tooltip-bg: rgba(0, 0, 0, 0.75);
+    --nx-tooltip-color: #fff;
+    --nx-tooltip-padding: 0.5rem;
+    --nx-tooltip-border-radius: 0.25rem;
+    --nx-tooltip-font-size: 0.875rem;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltip-text {
+    visibility: hidden;
+    background-color: var(--nx-tooltip-bg);
+    color: var(--nx-tooltip-color);
+    text-align: center;
+    padding: var(--nx-tooltip-padding);
+    border-radius: var(--nx-tooltip-border-radius);
+    font-size: var(--nx-tooltip-font-size);
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-top .tooltip-text {
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip-bottom .tooltip-text {
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip-left .tooltip-text {
+    top: 50%;
+    right: 125%;
+    margin-top: -16px;
+}
+
+.tooltip-right .tooltip-text {
+    top: 50%;
+    left: 125%;
+    margin-top: -16px;
+}

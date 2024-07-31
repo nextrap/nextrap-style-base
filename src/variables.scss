@@ -1,6 +1,4 @@
-
 :root {
-
     --nx-color-primary: #007bff;
     --nx-color-secondary: #6c757d;
     --nx-color-accent: #17a2b8;
@@ -9,4 +7,16 @@
     --nx-color-warning: #ffc107;
 
     --nx-button-radius: 0.25rem;
+
+    --nx-input-padding: 0.375rem 0.75rem;
+    --nx-input-border-radius: 0.25rem;
+    --nx-input-border: 1px solid #ced4da;
+    --nx-input-bg: #fff;
+    --nx-input-color: #495057;
+    --nx-input-focus-border-color: #80bdff;
+    --nx-input-focus-bg: #fff;
+    --nx-input-focus-color: #495057;
+    --nx-input-disabled-bg: #e9ecef;
+    --nx-input-disabled-border-color: #ced4da;
+    --nx-input-disabled-color: #6c757d;
 }
